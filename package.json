@@ -1,5 +1,6 @@
 {
   "name": "sesac-c-arte-project",
+  "homepage": "https://bug0630.github.io/C-Arte/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
