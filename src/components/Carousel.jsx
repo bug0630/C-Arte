@@ -35,10 +35,16 @@ const Carousel = ({ images, comments, pageLinks, intervalTime = 5000 }) => {
         </div>
       </Link>
       <button className="prev" onClick={goToPrevSlide}>
-        <img src="images/arrow_icon.svg" alt="arrow-icon"></img>
+        <img
+          src="https://bug0630.github.io/C-Arte/images/arrow_icon.svg"
+          alt="arrow-icon"
+        ></img>
       </button>
       <button className="next" onClick={goToNextSlide}>
-        <img src="images/arrow_icon.svg" alt="arrow-icon"></img>
+        <img
+          src="https://bug0630.github.io/C-Arte/images/arrow_icon.svg"
+          alt="arrow-icon"
+        ></img>
       </button>
       <div className="comment">{comments[currentIndex]}</div>
     </div>

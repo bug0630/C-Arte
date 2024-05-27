@@ -8,7 +8,7 @@ export default function MonthArtist() {
         <div className="picture">
           <img
             className="artistPhoto"
-            src="images/artist_img/artist1.webp"
+            src="https://bug0630.github.io/C-Arte/images/artist_img/artist1.webp"
             alt="artist"
           ></img>
         </div>
@@ -37,17 +37,26 @@ export default function MonthArtist() {
       <ul className="artMonthList">
         <li>
           <Link to="/">
-            <img src="images/art_img/img4.webp" alt="arts"></img>
+            <img
+              src="https://bug0630.github.io/C-Arte/images/art_img/img4.webp"
+              alt="arts"
+            ></img>
           </Link>
         </li>
         <li>
           <Link to="/">
-            <img src="images/art_img/img5.webp" alt="arts"></img>
+            <img
+              src="https://bug0630.github.io/C-Arte/images/art_img/img5.webp"
+              alt="arts"
+            ></img>
           </Link>
         </li>{' '}
         <li>
           <Link to="/">
-            <img src="images/art_img/img6.webp" alt="arts"></img>
+            <img
+              src="https://bug0630.github.io/C-Arte/images/art_img/img6.webp"
+              alt="arts"
+            ></img>
           </Link>
         </li>
       </ul>

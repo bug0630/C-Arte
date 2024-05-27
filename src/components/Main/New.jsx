@@ -74,7 +74,10 @@ export default function New() {
               search: '?query=' + encodeURIComponent('현대미술'),
             }}
           >
-            <img src="images/art_img/img13.webp" alt="productBanner"></img>
+            <img
+              src="https://bug0630.github.io/C-Arte/images/art_img/img13.webp"
+              alt="productBanner"
+            ></img>
             <h4>현대미술</h4>
             <p>다양성과 혁신</p>
           </Link>
