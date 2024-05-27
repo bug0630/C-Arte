@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState, useEffect, useRef } from 'react';
+import { useParams } from 'react-router-dom';
 import { Modal, Button } from 'react-bootstrap';
 import '../styles/auction.css';
 import artData from '../data/auction.json';
@@ -36,17 +37,19 @@ const AuctionPage = () => {
     email: '',
     phone: '',
   });
+
+  const { artId } = useParams();
   const [selectedArt, setSelectedArt] = useState(null);
   const handleSelectArt = (artId) => {
-    const auction = artData.find((item) => item.id === artId);
+    const auction = artData.find((item) => item.id === Number(artId));
     setSelectedArt(auction);
   };
   useEffect(() => {
     // Select the first artwork initially
     if (artData.length > 0) {
-      handleSelectArt(artData[1].id);
+      handleSelectArt(artId);
     }
-  }, []);
+  }, [artId]);
   const handleCloseModal = () => setShowModal(false);
   const handleShowModal = () => setShowModal(true);
 

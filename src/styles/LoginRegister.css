@@ -16,8 +16,8 @@
   align-items: center;
   overflow: hidden;
   transition: height 0.2s ease;
-  left: 37%;
-  top: 150px;
+  margin: auto;
+  top: 200px;
   border: 2px solid white;
 }
 .wrapper.active {
@@ -178,4 +178,23 @@ form .register-link {
   align-items: center;
   display: flex;
   justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper {
+    margin: auto;
+    width: 420px;
+    height: 450px;
+    background: transparent;
+    color: black;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: height 0.2s ease;
+    border: 2px solid white;
+  }
+  .wrapper.active {
+    height: 520px;
+  }
 }

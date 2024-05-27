@@ -7,7 +7,7 @@ function AuctionCountdown() {
   useEffect(() => {
     const auctionStartTime = new Date('2024-05-17T14:00:00'); // 경매 시작 시간 설정
     const auctionEndTime = new Date(auctionStartTime);
-    auctionEndTime.setHours(auctionEndTime.getHours() + 1); // 경매 종료 시간은 경매 시작 시간으로부터 1시간 후로 설정
+    auctionEndTime.setHours(auctionEndTime.getHours() + 2); // 경매 종료 시간은 경매 시작 시간으로부터 1시간 후로 설정
 
     const calculateTimeLeft = () => {
       const currentTime = new Date();

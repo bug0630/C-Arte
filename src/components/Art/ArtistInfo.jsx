@@ -22,40 +22,40 @@ const ArtistInfo = (props) => {
         <div className="infoValue">{product && product.description}</div>
       </div>
 
-      <div className='artistInfoSession'>
-      <img
-        src={product && product.profile_img}
-        alt=""
-        className="artistInfo_img"
-      />
-      <div className="artistInfo">
-        <div className="infoItem">
-          <div className="artistInfo_name">
-            {product && product.artist_name}
+      <div className="artistInfoSession">
+        <img
+          src={product && product.profile_img}
+          alt=""
+          className="artistInfo_img"
+        />
+        <div className="artistInfo">
+          <div className="infoItem">
+            <div className="artistInfo_name">
+              {product && product.artist_name}
+            </div>
+          </div>
+
+          <div className="Email">
+            <p>
+              <FaMailBulk className="iconEmail" />
+              {product && product.email}
+            </p>
+          </div>
+
+          <div className="instagram-link">
+            <p>
+              {' '}
+              <FaInstagram className="icon" />
+              <a
+                href={product && product.insta_link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Instagram
+              </a>
+            </p>
           </div>
         </div>
-
-        <div className="Email">
-          <p>
-            <FaMailBulk className="iconEmail" />
-            {product && product.email}
-          </p>
-        </div>
-
-        <div className="instagram-link">
-          <p>
-            {' '}
-            <FaInstagram className="icon" />
-            <a
-              href={product && product.insta_link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Instagram
-            </a>
-          </p>
-        </div>
-      </div>
       </div>
     </div>
   );

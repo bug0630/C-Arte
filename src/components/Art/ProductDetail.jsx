@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../../styles/ArtDetail.css';
 import productsData from '../../data/art.json';
+import { FaMailBulk, FaInstagram } from 'react-icons/fa';
 import { useParams, useNavigate } from 'react-router-dom';
 
 const ProductDetail = (props) => {
@@ -62,6 +63,42 @@ const ProductDetail = (props) => {
         <h1 className="product_name">{product && product.title}</h1>
 
         <div className="infoArea">
+          <div className="artistInfoSession">
+            <img
+              src={product && product.profile_img}
+              alt=""
+              className="artistInfo_img"
+            />
+            <div className="artistInfo">
+              <div className="infoItem">
+                <div className="artistInfo_name">
+                  {product && product.artist_name}
+                </div>
+              </div>
+
+              <div className="Email">
+                <p>
+                  <FaMailBulk className="iconEmail" />
+                  {product && product.email}
+                </p>
+              </div>
+
+              <div className="instagram-link">
+                <p>
+                  {' '}
+                  <FaInstagram className="icon" />
+                  <a
+                    href={product && product.insta_link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Instagram
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
           <div className="infoItem">
             <div className="infoLabel">작가명</div>
             <div className="infoValue">{product && product.artist_name}</div>
@@ -96,11 +133,11 @@ const ProductDetail = (props) => {
             <div className="infoLabel">가격</div>
             <div className="infoValue">{product && product.price}</div>
           </div>
-        </div>
-        <div className="product_btn">
-          <button className="product_cart" onClick={() => addToCart(product)}>
-            Add to Cart
-          </button>
+          <div className="product_btn">
+            <button className="product_cart" onClick={() => addToCart(product)}>
+              Add to Cart
+            </button>
+          </div>
         </div>
       </div>
     </div>

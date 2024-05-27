@@ -20,6 +20,14 @@ export default function Header() {
     setOpenProfile(!openProfile);
   };
 
+  const handleAuctionClick = (event) => {
+    if (!isLoggedIn) {
+      event.preventDefault();
+      alert('로그인이 필요합니다.');
+      navigate('/login');
+    }
+  };
+
   // console.log(isNavOpen);
   useEffect(() => {
     setIsLoggedIn(Boolean(localStorage.getItem('isLoggedIn')));
@@ -53,7 +61,6 @@ export default function Header() {
     <>
       <header>
         <div className={`nav ${isNavOpen ? 'none' : ''}`}>
-          {/* logo */}
           <Link to={'/'}>
             <img src={logo} alt="" className="logo" />
           </Link>
@@ -65,23 +72,22 @@ export default function Header() {
               style={{ display: isSearchOpen ? 'none' : '' }}
             >
               <li>
-                <Link to={'/auctionlist'} className="link">
+                <Link
+                  to={'/auctionlist'}
+                  className="link"
+                  onClick={handleAuctionClick}
+                >
                   경매
                 </Link>
               </li>
               <li>
-                <Link to={'/auction'} className="link">
+                <Link to={'/search?query='} className="link">
                   판매
                 </Link>
               </li>
               <li>
                 <Link to={'/artist'} className="link">
                   이달의 작가
-                </Link>
-              </li>
-              <li>
-                <Link to={'/artdetail/1'} className="link">
-                  작품 상세
                 </Link>
               </li>
             </ul>

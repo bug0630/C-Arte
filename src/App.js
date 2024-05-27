@@ -27,7 +27,7 @@ function App() {
         <Route path="/footer" element={<Footer />}></Route>
         <Route path="/mypage" element={<MyPage />} />
         <Route path="*" element={<NotFound />} />
-        <Route path="/auction" element={<Auction />} />
+        <Route path="/auction/:artId" element={<Auction />} />
         <Route path="/search" element={<Search></Search>}></Route>
         <Route path="/artistinfo" element={<ArtistInfo />}></Route>
         <Route path="/artdetail/:artistId" element={<ArtDetail />}></Route>
