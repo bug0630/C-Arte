@@ -45,7 +45,8 @@ export default function New() {
             }}
           >
             <img
-              src="https://i.namu.wiki/i/XEZDuTPW4bfTdxtBgo0Z_F7j1vyixV20b0rdhEGGRxRWgypje49XB_uDg0NB7AGul5PeyNimHWPAo_E13h1dEkRUx_UGUop41J9Hf2RE_WNUKFQxvC--PiKOkAEtHkKd8x679uvindy8wj6w2rlGKw.jpg"
+              src="https://i.namu.wiki/i/y6amiO7_O1Albu1i7btkRkDUiRxLsQKd2xFWEeQNOzMEJEaz6cCD8EzoXRlbKCP4hSAQkYmooT4R3yvYJkpO0Wn1SDaA9PZh6yuNIfGwdGTmIpMfXn51tQuwEalvPrcyn3JIH7SjFAEK4113HwyzAA.jpg
+              "
               alt="productBanner"
             ></img>
             <h4>근세미술</h4>
