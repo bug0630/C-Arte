@@ -45,7 +45,7 @@ export default function New() {
             }}
           >
             <img
-              src="https://i.namu.wiki/i/iuwFtDK7ESb83j7kd_9MHfw3xPBWO2tdsij8j4pNeGPiwQWCFrv3cDKkbVFGcqiNK4vKrix7dgC7g33Hcb7DOi4khJJPS1d0zXUW0qKWQ4xtRB5ZXgj82sjAJu5H2qJcQ9KvbnhivFiobiOPvpzw2Q.webp
+              src="https://www.artmajeur.com/media/cache/resolve/standard/a/d/administrator/blog/6470a0d3ded072.05565984_mona-lisa-by-leonardo-da-vinci.jpg
               "
               alt="productBanner"
             ></img>

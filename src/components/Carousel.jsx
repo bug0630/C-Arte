@@ -15,11 +15,21 @@ const Carousel = ({ images, comments, pageLinks, intervalTime = 5000 }) => {
     setCurrentIndex(newIndex);
   }, [currentIndex, images.length]);
 
+  let interval;
   useEffect(() => {
-    const interval = setInterval(goToNextSlide, intervalTime);
+    interval = setInterval(goToNextSlide, intervalTime);
     return () => clearInterval(interval);
   }, [currentIndex, goToNextSlide, intervalTime]);
 
+  const mouseEnter = () => {
+    console.log('MLOUSE');
+    clearInterval(interval);
+  };
+
+  const mouseLeave = () => {
+    console.log('M Leave');
+    interval = setInterval(goToNextSlide, intervalTime);
+  };
   return (
     <div className="carouselContainer ">
       <Link to={pageLinks[currentIndex]}>
@@ -27,6 +37,20 @@ const Carousel = ({ images, comments, pageLinks, intervalTime = 5000 }) => {
         <div className="slide">
           {[0, 1, 2].map((offset) => (
             <img
+              onMouseEnter={
+                offset == 1
+                  ? mouseEnter
+                  : () => {
+                      return;
+                    }
+              }
+              onMouseLeave={
+                offset == 1
+                  ? mouseLeave
+                  : () => {
+                      return;
+                    }
+              }
               key={currentIndex + offset}
               src={images[(currentIndex + offset) % images.length]}
               alt="slide"
