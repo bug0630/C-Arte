@@ -45,7 +45,7 @@ export default function New() {
             }}
           >
             <img
-              src="https://www.artmajeur.com/media/cache/resolve/standard/a/d/administrator/blog/6470a0d3ded072.05565984_mona-lisa-by-leonardo-da-vinci.jpg
+              src="https://bug0630.github.io/C-Arte/images/art_img/mona.webp
               "
               alt="productBanner"
             ></img>

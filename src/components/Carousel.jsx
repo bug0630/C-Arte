@@ -22,12 +22,10 @@ const Carousel = ({ images, comments, pageLinks, intervalTime = 5000 }) => {
   }, [currentIndex, goToNextSlide, intervalTime]);
 
   const mouseEnter = () => {
-    console.log('MLOUSE');
     clearInterval(interval);
   };
 
   const mouseLeave = () => {
-    console.log('M Leave');
     interval = setInterval(goToNextSlide, intervalTime);
   };
   return (
