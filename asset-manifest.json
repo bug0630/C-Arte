@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/C-Arte/static/css/main.ff8a929c.css",
-    "main.js": "/C-Arte/static/js/main.c7a0f1c1.js",
+    "main.css": "/C-Arte/static/css/main.cda71528.css",
+    "main.js": "/C-Arte/static/js/main.a59d1335.js",
+    "static/media/img13.webp": "/C-Arte/static/media/img13.34eb367458e0745119f7.webp",
+    "static/media/MonthArtistbg.webp": "/C-Arte/static/media/MonthArtistbg.6e069aedc5de5742d3f0.webp",
     "static/media/request.jpg": "/C-Arte/static/media/request.22284a6b66b1e203c4d4.jpg",
-    "static/media/MonthArtistbg.webp": "/C-Arte/static/media/MonthArtistbg.31ee6a31a1dd83d120aa.webp",
+    "static/media/hammer-1707731_1280.webp": "/C-Arte/static/media/hammer-1707731_1280.3b3cc3d339b6ef1bbf79.webp",
+    "static/media/the_last_supper.webp": "/C-Arte/static/media/the_last_supper.9680b4cf70a7b55e2a29.webp",
     "static/media/isolated-2532037_1920.png": "/C-Arte/static/media/isolated-2532037_1920.2daf2f74d342fbae5584.png",
-    "static/media/img13.webp": "/C-Arte/static/media/img13.fe2a5a08b3c53fa3745d.webp",
-    "static/media/the_last_supper.webp": "/C-Arte/static/media/the_last_supper.2537493db44b264bb20e.webp",
     "static/media/ai-24-05-pc.jpg": "/C-Arte/static/media/ai-24-05-pc.dae6e20b2c668ca60a19.jpg",
     "static/media/am-24-04-pc-3.jpg": "/C-Arte/static/media/am-24-04-pc-3.b71b3ef772c5c5865433.jpg",
     "static/media/am-24-05-pc.jpg": "/C-Arte/static/media/am-24-05-pc.2af8783396a7daa571aa.jpg",
     "static/media/woman-1283009_1920.jpg": "/C-Arte/static/media/woman-1283009_1920.2879e68d1f7bd74afe39.jpg",
     "static/media/carousel4.jpg": "/C-Arte/static/media/carousel4.b7ae128200d60855f952.jpg",
     "static/media/mona_lisa.webp": "/C-Arte/static/media/mona_lisa.c2d806bb27fffcab673d.webp",
-    "static/media/hammer-1707731_1280.jpg": "/C-Arte/static/media/hammer-1707731_1280.f2af5f5d5f34e6d9aff3.jpg",
     "static/media/pc-mb-4.jpg": "/C-Arte/static/media/pc-mb-4.d7c43e48df18fd99bca8.jpg",
     "static/media/sunset_in_venice.webp": "/C-Arte/static/media/sunset_in_venice.f3b163c68de27d574424.webp",
     "static/media/carousel1.jpg": "/C-Arte/static/media/carousel1.dc0c9e6ec5a00e9852c3.jpg",
@@ -23,11 +23,11 @@
     "static/media/artist1.webp": "/C-Arte/static/media/artist1.6801f92d5566a5728cce.webp",
     "static/media/logo.svg": "/C-Arte/static/media/logo.8b78d8d0a59d9caeecd13ca47e9bfb48.svg",
     "index.html": "/C-Arte/index.html",
-    "main.ff8a929c.css.map": "/C-Arte/static/css/main.ff8a929c.css.map",
-    "main.c7a0f1c1.js.map": "/C-Arte/static/js/main.c7a0f1c1.js.map"
+    "main.cda71528.css.map": "/C-Arte/static/css/main.cda71528.css.map",
+    "main.a59d1335.js.map": "/C-Arte/static/js/main.a59d1335.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff8a929c.css",
-    "static/js/main.c7a0f1c1.js"
+    "static/css/main.cda71528.css",
+    "static/js/main.a59d1335.js"
   ]
 }
