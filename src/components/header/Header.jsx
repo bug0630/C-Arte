@@ -82,12 +82,12 @@ export default function Header() {
               </li>
               <li>
                 <Link to={'/search?query='} className="link">
-                  판매
+                  모든 작품
                 </Link>
               </li>
               <li>
                 <Link to={'/artist'} className="link">
-                  이달의 작가
+                  이 달의 작가
                 </Link>
               </li>
             </ul>

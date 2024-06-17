@@ -16,9 +16,9 @@ export default function Footer() {
             <div className="useful-link">
               <h2>Useful Links</h2>
               <div className="use-links">
-                <Link to={'/auctionlist'}>경매 리스트</Link>
-                <Link to={'/artist'}>이달의 작가</Link>
-                <Link to={'/search?query='}>작품 상세</Link>
+                <Link to={'/auctionlist'}>경매</Link>
+                <Link to={'/search?query='}>모든 작품</Link>
+                <Link to={'/artist'}>이 달의 작가</Link>
               </div>
             </div>
 
