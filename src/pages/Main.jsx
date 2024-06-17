@@ -12,7 +12,7 @@ export default function Main() {
   const images = [
     require('../img/img13.webp'),
     require('../img/MonthArtistbg.webp'),
-    require('../img/hammer-1707731_1280.jpg'),
+    require('../img/hammer-1707731_1280.webp'),
     require('../img/the_last_supper.webp'),
   ];
   const comments = ['이달의 작가', '경매', '근대미술', '현대미술'];

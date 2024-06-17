@@ -120,8 +120,7 @@ header {
   background: #fff;
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
-  border-bottom: 2px solid black;
+  max-width: 1920px;
   white-space: nowrap;
 }
 .nav,
