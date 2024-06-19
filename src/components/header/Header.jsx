@@ -8,13 +8,16 @@ import { useMediaQuery } from 'react-responsive';
 import { useNavigate } from 'react-router-dom/dist';
 
 export default function Header() {
-  //Search Toggle
-  const [isNavOpen, setIsNavOpen] = useState(false);
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(true);
+  const [isSearchOpen, setIsSearchOpen] = useState(true);
   const [searchText, setSearchText] = useState('');
   const [openProfile, setOpenProfile] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    setIsLoggedIn(Boolean(localStorage.getItem('isLoggedIn')));
+  }, [isLoggedIn]);
 
   const handleProfileClick = () => {
     setOpenProfile(!openProfile);
@@ -28,27 +31,17 @@ export default function Header() {
     }
   };
 
-  // console.log(isNavOpen);
-  useEffect(() => {
-    setIsLoggedIn(Boolean(localStorage.getItem('isLoggedIn')));
-  }, [isLoggedIn]);
-
   const handleClick = () => {
     setIsNavOpen(!isNavOpen);
-    // setIsNavOpen(true);
   };
 
-  // const toggleNav = () => {
-  //   setIsNavOpen(!isNavOpen);
-  //   setIsSearchOpen(false);
-  // };
   const toggleSearch = () => {
     setIsSearchOpen(!isSearchOpen);
-    setIsNavOpen(false); // Close nav when opening search
+    setIsNavOpen(true);
   };
+
   const handleKeyPress = (event) => {
     if (event.key === 'Enter') {
-      // 엔터를 눌렀을 때 검색 결과 페이지로 이동하고 입력된 검색어를 쿼리 문자열로 전달
       navigate(`/search?query=${searchText}`);
     }
   };
@@ -62,15 +55,10 @@ export default function Header() {
       <header>
         <div className={`nav ${isNavOpen ? 'none' : ''}`}>
           <Link to={'/'}>
-            <img src={logo} alt="" className="logo" />
+            <img src={logo} alt="logo" className="logo" />
           </Link>
-          {/* MenuList */}
           {(isDesktop || isNavOpen) && (
-            <ul
-              id="text"
-              className="navbar active"
-              style={{ display: isSearchOpen ? 'none' : '' }}
-            >
+            <ul id="text" className={`navbar ${isSearchOpen ? 'active' : ''}`}>
               <li>
                 <Link
                   to={'/auctionlist'}
@@ -100,14 +88,12 @@ export default function Header() {
                 placeholder="검색..."
                 value={searchText}
                 onChange={(e) => setSearchText(e.target.value)}
-                onKeyPress={handleKeyPress} // 엔터 키 이벤트 처리
+                onKeyPress={handleKeyPress}
               />
             )}
             <div className="search-icon" onClick={toggleSearch}>
-              {/* Search icon goes here */}
               <FaSearch />
             </div>
-
             {isLoggedIn ? (
               <div className="profileImage" onClick={handleProfileClick}>
                 <FaUser className="user-icon" />
@@ -130,7 +116,7 @@ export default function Header() {
             ) : (
               <FaBars className="mobileicon" />
             )}
-          </div>{' '}
+          </div>
         </div>
       </header>
     </>
