@@ -1,4 +1,4 @@
-import '../../styles/reset.css';
+// import '../../styles/reset.css';
 import '../../styles/Artist.scss';
 import '../../styles/ArtistIntroduction.css';
 import Carousel from '../Carousel';

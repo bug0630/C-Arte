@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router';
 import Main from './pages/Main';
 import NotFound from './pages/NotFound';
-import './styles/reset.css';
+import './styles/reset.scss';
 import Auction from './pages/Auction';
 import Search from './pages/Search';
 import ArtistInfo from './pages/ArtistInfo';

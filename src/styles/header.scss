@@ -1,3 +1,4 @@
+@import 'reset.scss';
 .lab-btn {
   width: 100px;
   height: 40px;
@@ -26,6 +27,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 #text ul li {
@@ -152,10 +154,7 @@ header {
   left: 1%;
   top: 31px;
 }
-@media screen and (max-width: 1200px) {
-  .search-login input {
-    display: none;
-  }
+@media screen and (max-width: $tablet) {
   .nav .search-icon {
     color: #353842;
     font-size: 20px;
@@ -163,11 +162,21 @@ header {
     padding-right: 30px;
     display: block;
   }
+  .search-login input {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    width: 80%;
+    top: 100px;
+    margin: 10px;
+    background-color: white;
+  }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: $mobile) {
   #text {
-    display: block;
+    // display: none;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
@@ -204,12 +213,6 @@ header {
     display: block;
   }
 
-  .logo {
-    position: absolute;
-    top: 5px;
-    left: 10%;
-  }
-
   .lab-btn {
     position: absolute;
     right: 1%;
@@ -218,17 +221,6 @@ header {
   .nav .search-icon {
     position: absolute;
     right: 27%;
-  }
-
-  .search-login input {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position: absolute;
-    width: 80%;
-    top: 100px;
-    margin: 10px;
-    background-color: white;
   }
 
   .profileImage {

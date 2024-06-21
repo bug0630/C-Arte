@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import '../../styles/header.css';
+import '../../styles/header.scss';
 import React, { useState, useEffect } from 'react';
 import logo from '../../assets/logo.svg';
 import { FaSearch, FaUser, FaBars, FaTimes } from 'react-icons/fa';
@@ -8,8 +8,8 @@ import { useMediaQuery } from 'react-responsive';
 import { useNavigate } from 'react-router-dom/dist';
 
 export default function Header() {
-  const [isNavOpen, setIsNavOpen] = useState(true);
-  const [isSearchOpen, setIsSearchOpen] = useState(true);
+  const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false); // 초기값을 false로 설정
   const [searchText, setSearchText] = useState('');
   const [openProfile, setOpenProfile] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState();
@@ -47,9 +47,11 @@ export default function Header() {
   };
 
   const isDesktop = useMediaQuery({
-    query: '(min-width: 900px)',
+    query: '(min-width: 1200px)',
   });
-
+  const isMobile = useMediaQuery({
+    query: '(min-width: 800px)',
+  });
   return (
     <>
       <header>
@@ -57,7 +59,7 @@ export default function Header() {
           <Link to={'/'}>
             <img src={logo} alt="logo" className="logo" />
           </Link>
-          {(isDesktop || isNavOpen) && (
+          {(isMobile || isNavOpen) && (
             <ul id="text" className={`navbar ${isSearchOpen ? 'active' : ''}`}>
               <li>
                 <Link
@@ -81,7 +83,7 @@ export default function Header() {
             </ul>
           )}
           <div className="search-login">
-            {isSearchOpen && (
+            {(isDesktop || isSearchOpen) && ( // 1200px 이상이거나 isSearchOpen이 true일 때만 input 필드를 보여줍니다.
               <input
                 className="input"
                 type="text"
