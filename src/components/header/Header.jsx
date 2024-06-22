@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom/dist';
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const [isSearchOpen, setIsSearchOpen] = useState(false); // 초기값을 false로 설정
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [searchText, setSearchText] = useState('');
   const [openProfile, setOpenProfile] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState();
@@ -37,7 +37,6 @@ export default function Header() {
 
   const toggleSearch = () => {
     setIsSearchOpen(!isSearchOpen);
-    setIsNavOpen(true);
   };
 
   const handleKeyPress = (event) => {
@@ -56,9 +55,20 @@ export default function Header() {
     <>
       <header>
         <div className={`nav ${isNavOpen ? 'none' : ''}`}>
-          <Link to={'/'}>
-            <img src={logo} alt="logo" className="logo" />
-          </Link>
+          <div id="mobile" onClick={handleClick}>
+            {isNavOpen ? (
+              <FaTimes className="mobileicon" />
+            ) : (
+              <FaBars className="mobileicon" />
+            )}
+          </div>
+          <div className="logo">
+            {' '}
+            <Link to={'/'}>
+              <img src={logo} alt="logo" />
+            </Link>
+          </div>
+
           {(isMobile || isNavOpen) && (
             <ul id="text" className={`navbar ${isSearchOpen ? 'active' : ''}`}>
               <li>
@@ -110,13 +120,6 @@ export default function Header() {
               <Link className="lab-btn" to="/login">
                 로그인
               </Link>
-            )}
-          </div>
-          <div id="mobile" onClick={handleClick}>
-            {isNavOpen ? (
-              <FaTimes className="mobileicon" />
-            ) : (
-              <FaBars className="mobileicon" />
             )}
           </div>
         </div>
