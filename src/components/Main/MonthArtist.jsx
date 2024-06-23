@@ -14,7 +14,7 @@ export default function MonthArtist() {
         </div>
         <div className="artistComment">
           <h3>김세동</h3>
-          <p>
+          <div className="com">
             김세동 작가는 현대 미술 분야에서 주목받고 있는 젊은 작가입니다. 그의
             작품은 독창적이고 예측할 수 없는 시각 언어를 통해 현대 사회의 다양한
             이슈와 감정을 다룹니다. 김세동 작가는 전통적인 미술 양식을
@@ -28,7 +28,7 @@ export default function MonthArtist() {
             사유와 공감을 일으킵니다. 미술계에서 중요한 위치를 차지할 것으로
             기대되며, 그의 작품은 계속해서 예술적인 혁신과 인간적인 메시지를
             전달할 것으로 기대됩니다.
-          </p>
+          </div>
           <Link to="/artist">
             <button>작품 보러가기</button>
           </Link>
