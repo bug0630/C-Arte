@@ -90,12 +90,28 @@ $main-color: #aa8453;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     }
     .com {
+      font-size: 20px;
       overflow: hidden;
+      margin-top: 100px;
+      text-overflow: ellipsis;
       display: -webkit-box;
-      -webkit-line-clamp: 10; /* 허용할 최대 줄 수를 지정합니다. */
       -webkit-box-orient: vertical;
+      -webkit-line-clamp: 9;
+      @media screen and (max-width: 800px) {
+        font-size: 1em;
+        margin-top: 50px;
+      }
       @media screen and (max-width: 600px) {
-        -webkit-line-clamp: 5;
+        font-size: 1rem;
+        line-height: 1.05em;
+        margin: 0;
+        height: 100%;
+        max-height: 100px;
+        -webkit-line-clamp: 6;
+      }
+      @media screen and (max-width: 400px) {
+        max-height: 50px;
+        -webkit-line-clamp: 3;
       }
     }
   }
