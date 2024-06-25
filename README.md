@@ -4,9 +4,10 @@ https://bug0630.github.io/C-Arte/
 
 ## 사용한 폰트
 
-영문: Baskerville  
-한글: Noto Serif Korean  
-컬러: <img src="https://via.placeholder.com/150/aa8453/FFFFFF?text=%23aa8453" width="100" height="15" alt="#aa8453">
+| 한글 | 영문 | 컬러 |
+| --- | --- | --- 
+|  Noto Serif Korea |  Baskerville   | <img src="https://via.placeholder.com/150/aa8453/FFFFFF?text=%23aa8453" width="100" height="15" alt="#aa8453"> | 
+
 
 중세 미술품부터 현대 미술품까지 다양한 시대의 작품을 함께 소개하기 위해 고전적인 아름다움을 지닌 Baskerville과 클래식하고 세련된 느낌의 Noto Serif Korean을 함께 사용
 ##
