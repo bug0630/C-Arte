@@ -23,4 +23,4 @@ https://bug0630.github.io/C-Arte/
 ##
 | 메인 | 로그인 | 검색 | 경매 | 작가 | 
 |---|---|---| ---|---|
-| <img src="git img/1201/screencapture-bug0630-github-io-C-Arte-2024-06-25-17_28_35.png" width="400"> | <img src="git img/1201/screencapture-bug0630-github-io-C-Arte-2024-06-25-17_21_10 (1).png" width="400"> | <img src="git img/1201/screencapture-bug0630-github-io-C-Arte-2024-06-25-17_31_54.png" width="400"> | <img src="git img/1201/screencapture-bug0630-github-io-C-Arte-2024-06-25-17_33_36.png width="400"> |<img src="git img/1201/screencapture-bug0630-github-io-C-Arte-2024-06-25-17_36_51.png" width="400">|
+| <img src="git img/1201/screencapture-bug0630-github-io-C-Arte-2024-06-25-17_28_35.png" width="400"> | <img src="git img/1201/screencapture-bug0630-github-io-C-Arte-2024-06-25-17_21_10 (1).png" width="400"> | <img src="git img/1201/screencapture-bug0630-github-io-C-Arte-2024-06-25-17_31_54.png" width="400"> | <img src="git img/1201/screencapture-bug0630-github-io-C-Arte-2024-06-25-17_33_36.png" width="400"> |<img src="git img/1201/screencapture-bug0630-github-io-C-Arte-2024-06-25-17_36_51.png" width="400">|
