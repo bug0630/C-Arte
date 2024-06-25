@@ -46,10 +46,10 @@ export default function Header() {
   };
 
   const isDesktop = useMediaQuery({
-    query: '(min-width: 1200px)',
+    query: '(min-width: 1199px)',
   });
   const isMobile = useMediaQuery({
-    query: '(min-width: 800px)',
+    query: '(min-width: 799px)',
   });
   return (
     <>
