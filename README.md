@@ -14,7 +14,7 @@ https://bug0630.github.io/C-Arte/
     <td>Noto Serif Korea</td>
     <td>Baskerville</td>
     <td style="background-color: #aa8453;">
-      <img src="https://via.placeholder.com/150/aa8453/FFFFFF?text=%23aa8453" width="100" height="30" alt="#aa8453">
+      <img src="https://via.placeholder.com/150/aa8453/FFFFFF?text=%23aa8453" width="100" height="100" alt="#aa8453">
     </td>
   </tr>
 </table>
