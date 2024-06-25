@@ -51,6 +51,7 @@ export default function Header() {
   const isMobile = useMediaQuery({
     query: '(min-width: 801px)',
   });
+
   return (
     <>
       <header>
