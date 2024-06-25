@@ -23,4 +23,4 @@ https://bug0630.github.io/C-Arte/
 ##
 | 1200~ | 801~1199 | 375~800 | 
 |---|---|---|
-| <img src="git img/1200/screencapture-bug0630-github-io-C-Arte-2024-06-25-16_44_08 (1).png"> | <img src="img/screencapture-bug0630-github-io-C-Arte-2024-06-25-15_53_20 (1).png"> | <img src="git img/801/screencapture-bug0630-github-io-C-Arte-2024-06-25-16_48_35 (1).png"> | <img src="git img/375/screencapture-localhost-3000-C-Arte-2024-06-25-17_00_31 (1).png"> | 
+| <img src="git img/1200/screencapture-bug0630-github-io-C-Arte-2024-06-25-16_44_08 (1).png"> | <img src="git img/801/screencapture-bug0630-github-io-C-Arte-2024-06-25-16_48_35 (1).png"> | <img src="git img/375/screencapture-localhost-3000-C-Arte-2024-06-25-17_00_31 (1).png"> | 
