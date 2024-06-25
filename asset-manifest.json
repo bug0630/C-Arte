@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/C-Arte/static/css/main.664dd372.css",
-    "main.js": "/C-Arte/static/js/main.c05d8a1c.js",
+    "main.js": "/C-Arte/static/js/main.9bc4a5a4.js",
     "static/media/img13.webp": "/C-Arte/static/media/img13.34eb367458e0745119f7.webp",
     "static/media/MonthArtistbg.webp": "/C-Arte/static/media/MonthArtistbg.6e069aedc5de5742d3f0.webp",
     "static/media/request.jpg": "/C-Arte/static/media/request.22284a6b66b1e203c4d4.jpg",
@@ -24,10 +24,10 @@
     "static/media/logo.svg": "/C-Arte/static/media/logo.8b78d8d0a59d9caeecd13ca47e9bfb48.svg",
     "index.html": "/C-Arte/index.html",
     "main.664dd372.css.map": "/C-Arte/static/css/main.664dd372.css.map",
-    "main.c05d8a1c.js.map": "/C-Arte/static/js/main.c05d8a1c.js.map"
+    "main.9bc4a5a4.js.map": "/C-Arte/static/js/main.9bc4a5a4.js.map"
   },
   "entrypoints": [
     "static/css/main.664dd372.css",
-    "static/js/main.c05d8a1c.js"
+    "static/js/main.9bc4a5a4.js"
   ]
 }
