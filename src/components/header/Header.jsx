@@ -94,11 +94,11 @@ export default function Header() {
             </ul>
           )}
           <div className="search-login">
-            {(isDesktop || isSearchOpen) && ( // 1200px 이상이거나 isSearchOpen이 true일 때만 input 필드를 보여줍니다.
+            {(isDesktop || isSearchOpen) && (
               <input
                 className="input"
                 type="text"
-                placeholder="검색..."
+                placeholder="작품 검색..."
                 value={searchText}
                 onChange={(e) => setSearchText(e.target.value)}
                 onKeyPress={handleKeyPress}
