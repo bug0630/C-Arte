@@ -30,7 +30,7 @@ export default function MonthArtist() {
             전달할 것으로 기대됩니다.
           </div>
           <Link to="/artist">
-            <button>작품 보러가기</button>
+            <button className="artistBtn">작품 보러가기</button>
           </Link>
         </div>
       </div>
