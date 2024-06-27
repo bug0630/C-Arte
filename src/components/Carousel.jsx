@@ -36,14 +36,14 @@ const Carousel = ({ images, comments, pageLinks, intervalTime = 5000 }) => {
           {[0, 1, 2].map((offset) => (
             <img
               onMouseEnter={
-                offset == 1
+                offset === 1
                   ? mouseEnter
                   : () => {
                       return;
                     }
               }
               onMouseLeave={
-                offset == 1
+                offset === 1
                   ? mouseLeave
                   : () => {
                       return;
