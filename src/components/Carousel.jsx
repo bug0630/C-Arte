@@ -1,54 +1,42 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Carousel.scss';
 
 const Carousel = ({ images, comments, pageLinks, intervalTime = 5000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const intervalRef = useRef(null);
 
   const goToNextSlide = useCallback(() => {
-    const newIndex = (currentIndex + 1) % images.length;
-    setCurrentIndex(newIndex);
-  }, [currentIndex, images.length]);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  }, [images.length]);
 
   const goToPrevSlide = useCallback(() => {
-    const newIndex = (currentIndex - 1 + images.length) % images.length;
-    setCurrentIndex(newIndex);
-  }, [currentIndex, images.length]);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + images.length) % images.length
+    );
+  }, [images.length]);
 
-  let interval;
   useEffect(() => {
-    interval = setInterval(goToNextSlide, intervalTime);
-    return () => clearInterval(interval);
-  }, [currentIndex, goToNextSlide, intervalTime]);
+    intervalRef.current = setInterval(goToNextSlide, intervalTime);
+    return () => clearInterval(intervalRef.current);
+  }, [goToNextSlide, intervalTime]);
 
   const mouseEnter = () => {
-    clearInterval(interval);
+    clearInterval(intervalRef.current);
   };
 
   const mouseLeave = () => {
-    interval = setInterval(goToNextSlide, intervalTime);
+    intervalRef.current = setInterval(goToNextSlide, intervalTime);
   };
+
   return (
-    <div className="carouselContainer ">
+    <div className="carouselContainer">
       <Link to={pageLinks[currentIndex]}>
-        {' '}
         <div className="slide">
           {[0, 1, 2].map((offset) => (
             <img
-              onMouseEnter={
-                offset === 1
-                  ? mouseEnter
-                  : () => {
-                      return;
-                    }
-              }
-              onMouseLeave={
-                offset === 1
-                  ? mouseLeave
-                  : () => {
-                      return;
-                    }
-              }
+              onMouseEnter={offset === 1 ? mouseEnter : undefined}
+              onMouseLeave={offset === 1 ? mouseLeave : undefined}
               key={currentIndex + offset}
               src={images[(currentIndex + offset) % images.length]}
               alt="slide"

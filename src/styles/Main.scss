@@ -27,17 +27,24 @@ $main-color: #aa8453;
   margin: 0 auto;
   width: 100%;
   max-width: 1920px;
-  aspect-ratio: 12/5;
   overflow: hidden;
-}
 
+  @media screen and (min-width: 801px) {
+    aspect-ratio: 12/5;
+  }
+  @media screen and (max-width: 800px) {
+    .slide {
+      width: 1200px;
+      height: 500px;
+    }
+  }
+}
 .artMonth {
   width: 100%;
   max-width: 1200px;
   margin: auto;
   padding-top: 200px;
   overflow: hidden;
-  // white-space: nowrap;
   transition: opacity 1s ease;
   transform-origin: center center;
   button {
