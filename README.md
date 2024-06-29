@@ -2,10 +2,6 @@
 
 https://bug0630.github.io/C-Arte/
 
-## 인원 및 기간
-
-5인 (3주 소요)
-
 ## 사용한 폰트
 
 <table>
