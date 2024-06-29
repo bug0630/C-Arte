@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Result.scss';
-import { useSearch } from '../../pages/Search'; // useSearch 추가
+import { useSearch } from '../../pages/Search';
 
 export default function Result() {
   const [artData, setArtData] = useState([]);

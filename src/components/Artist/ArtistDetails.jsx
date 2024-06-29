@@ -1,11 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../../styles/reset.scss';
-import jsonData from '../../data/artist.json';
 import '../../styles/Artist.scss';
 import '../../styles/ArtistIntroduction.css';
 import { FaMailBulk, FaInstagram } from 'react-icons/fa';
 const ArtistDetails = () => {
-  const [artistData] = useState(jsonData);
+  const [artistData, setartistData] = useState([]);
+  useEffect(() => {
+    fetchArtData();
+  }, []);
+  const fetchArtData = () => {
+    fetch(process.env.PUBLIC_URL + '/data/artist.json')
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setartistData(data);
+      })
+      .catch((error) => {
+        console.error('Error fetching art data:', error);
+      });
+  };
   return (
     <>
       <div className="content">
