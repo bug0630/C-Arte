@@ -1,4 +1,7 @@
-@import 'reset.scss';
+$main-color: #aa8453;
+$tablet: 1200px;
+$mobile: 800px;
+$main-color: #aa8453;
 header {
   width: 100%;
   height: 100px;
@@ -100,6 +103,7 @@ header {
 
 .input {
   height: 50px;
+  width: 500px;
   border: none;
   outline: none;
   color: black;

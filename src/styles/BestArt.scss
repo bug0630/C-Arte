@@ -1,4 +1,15 @@
-@import './Main.scss';
+$main-color: #aa8453;
+@mixin h2 {
+  font-size: 36px;
+  text-align: center;
+  color: $main-color;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $main-color;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .bestWrap {
   margin-top: 200px;
   width: 100%;
