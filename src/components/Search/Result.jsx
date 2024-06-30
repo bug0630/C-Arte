@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Result.scss';
-import { useSearch } from '../../pages/Search';
+import { useSelector } from 'react-redux';
 
 export default function Result() {
   const [artData, setArtData] = useState([]);
-  const searchQuery = useSearch(); // useSearch 훅으로 검색어 가져오기
+  const searchQuery = useSelector((state) => state.searchQuery); // Redux에서 검색어 가져오기
 
   useEffect(() => {
     fetchArtData();
@@ -57,7 +57,6 @@ export default function Result() {
       <ul className="resultCard">
         {filteredArtData.map((item) => (
           <Link to={`/artdetail/${item.id}`} key={item.id}>
-            {' '}
             <li key={item.id}>
               <img src={item.art_img[0]} alt={item.title}></img>
               <h5>{item.title}</h5>
