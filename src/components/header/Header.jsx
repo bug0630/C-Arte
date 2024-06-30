@@ -5,19 +5,22 @@ import logo from '../../assets/logo.svg';
 import { FaSearch, FaUser, FaBars, FaTimes } from 'react-icons/fa';
 import DropDownProfile from '../dropdownProfile/DropDownProfile';
 import { useMediaQuery } from 'react-responsive';
-import { useNavigate } from 'react-router-dom/dist';
+import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { setSearchQuery } from '../../store/action'; // 액션 가져오기
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [searchText, setSearchText] = useState('');
   const [openProfile, setOpenProfile] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState();
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   useEffect(() => {
     setIsLoggedIn(Boolean(localStorage.getItem('isLoggedIn')));
-  }, [isLoggedIn]);
+  }, []);
 
   const handleProfileClick = () => {
     setOpenProfile(!openProfile);
@@ -41,6 +44,7 @@ export default function Header() {
 
   const handleKeyPress = (event) => {
     if (event.key === 'Enter') {
+      dispatch(setSearchQuery(searchText)); // 검색어를 Redux에 저장
       navigate(`/search?query=${searchText}`);
     }
   };
@@ -64,7 +68,6 @@ export default function Header() {
             )}
           </div>
           <div className="logo">
-            {' '}
             <Link to={'/'}>
               <img src={logo} alt="logo" />
             </Link>
