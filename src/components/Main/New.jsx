@@ -1,25 +1,8 @@
-import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function New() {
-  const [showBoardSection, setShowBoardSection] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 2500 && !showBoardSection) {
-        setShowBoardSection(true);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [showBoardSection]); // showBoardSection 상태가 변경될 때마다 useEffect 재실행
-
   return (
-    <div className={`newWrap ${showBoardSection ? 'show' : ''}`}>
+    <div className="newWrap">
       <h2>New</h2>
       <ul className="newProduct">
         <li>

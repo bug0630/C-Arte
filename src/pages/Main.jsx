@@ -15,7 +15,7 @@ export default function Main() {
     require('../img/hammer-1707731_1280.webp'),
     require('../img/the_last_supper.webp'),
   ];
-  const comments = ['이달의 작가', '경매', '근대미술', '현대미술'];
+  const comments = ['이 달의 작가', '경매', '근대미술', '현대미술'];
 
   const pageLinks = [
     '/artist',
