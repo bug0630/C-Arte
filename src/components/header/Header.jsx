@@ -7,7 +7,7 @@ import DropDownProfile from '../dropdownProfile/DropDownProfile';
 import { useMediaQuery } from 'react-responsive';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { setSearchQuery } from '../../store/action'; // 액션 가져오기
+import { setSearchQuery } from '../../store/action';
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -104,7 +104,7 @@ export default function Header() {
                 placeholder="작품 검색..."
                 value={searchText}
                 onChange={(e) => setSearchText(e.target.value)}
-                onKeyPress={handleKeyPress}
+                onKeyDown={handleKeyPress}
               />
             )}
             <div className="search-icon" onClick={toggleSearch}>

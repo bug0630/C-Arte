@@ -82,7 +82,7 @@ header {
 }
 .link:hover,
 .link:focus {
-  color: $main-color;
+  color: $main-color !important;
   width: 100px;
   height: 20px;
   border: 1px solid $main-color;
