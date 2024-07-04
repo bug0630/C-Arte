@@ -2,6 +2,8 @@
 
 https://bug0630.github.io/C-Arte/
 
+사용기술: React, SASS, Redux
+
 5인 팀 프로젝트
 
 담당: 메인페이지, 헤더, 푸터, 검색페이지
