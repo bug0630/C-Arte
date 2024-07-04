@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import SelectBox from './SelectBox';
 import { useLocation } from 'react-router-dom';
+import SelectBox from './SelectBox'; // SelectBox 컴포넌트 불러오기
 
 const artSolt = [
   { value: 'new', name: '신작품' },
@@ -9,21 +9,19 @@ const artSolt = [
 ];
 
 export default function SearchTab() {
-  // URL 쿼리스트링 값 가져오기
   const [queryString, setQueryString] = useState('');
   const location = useLocation();
 
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     const query = params.get('query');
-    // 확인을 위한 console.log 추가
     setQueryString(query || '');
-  }, [location.search]); // 의존성 배열에 location.search 추가
+  }, [location.search]);
 
   return (
     <div className="searchTab">
       <p>{queryString ? `${queryString} 검색 결과` : '검색 결과'}</p>
-      <SelectBox options={artSolt}></SelectBox>
+      <SelectBox options={artSolt} />
     </div>
   );
 }
