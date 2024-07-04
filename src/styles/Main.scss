@@ -113,6 +113,7 @@ $main-color: #aa8453;
       overflow: hidden;
       display: -webkit-box;
       -webkit-box-orient: vertical;
+      line-clamp: 12;
       -webkit-line-clamp: 12;
       text-align: center;
       @media screen and (max-width: 1000px) {

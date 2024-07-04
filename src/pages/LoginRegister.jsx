@@ -3,7 +3,7 @@
 import '../styles/LoginRegister.css';
 import { FaUser, FaLock, FaEnvelope } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
 import { SiKakaotalk, SiGmail, SiFacebook, SiNaver } from 'react-icons/si';
@@ -23,7 +23,12 @@ export default function LoginRegister() {
   const registerLink = () => {
     setAction('active');
   };
-
+  useEffect(() => {
+    localStorage.setItem('id', 'admin1');
+    localStorage.setItem('password', '123456');
+    localStorage.setItem('name', 'Test User');
+    localStorage.setItem('email', 'test@example.com');
+  }, []);
   const loginLink = () => {
     setAction('');
   };
@@ -101,6 +106,7 @@ export default function LoginRegister() {
                   ref={loginId}
                   type="text"
                   placeholder="아이디를 입력해 주세요"
+                  defaultValue="admin1"
                   required
                 />
               </div>
@@ -110,6 +116,7 @@ export default function LoginRegister() {
                   ref={loginPassword}
                   type="password"
                   placeholder="비밀번호를 입력해 주세요"
+                  defaultValue="123456"
                   required
                 />
               </div>
