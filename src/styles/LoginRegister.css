@@ -1,5 +1,5 @@
 .login-wrapper {
-  height: 100vh;
+  height: calc(100vh - 100px);
   min-height: 800px;
   background-image: url('https://i.pinimg.com/736x/17/c3/e2/17c3e29de8ea625ddac3831b093bb661.jpg');
   background-size: cover;
@@ -181,12 +181,13 @@ form .register-link {
   justify-content: center;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   .wrapper {
     margin: auto;
     width: 100%;
     max-width: 420px;
     height: 450px;
+    top: 100px;
     background: transparent;
     color: black;
     border-radius: 40px;
@@ -198,5 +199,13 @@ form .register-link {
   }
   .wrapper.active {
     height: 520px;
+  }
+  .login-wrapper {
+    height: calc(100vh - 100px);
+    min-height: 600px;
+    background-image: url('https://i.pinimg.com/736x/17/c3/e2/17c3e29de8ea625ddac3831b093bb661.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
   }
 }
