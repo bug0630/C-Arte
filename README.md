@@ -2,11 +2,17 @@
 
 https://bug0630.github.io/C-Arte/
 
-사용기술: React, SASS, Redux
+## 작업과정
 
 5인 팀 프로젝트
 
+작업기간 3주
+
+사용기술: React, SASS, Redux
+
 담당: 메인페이지, 헤더, 푸터, 검색페이지
+
+각 페이지 반응형 진행중
 
 ## 목적
 
