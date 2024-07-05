@@ -43,5 +43,5 @@ https://bug0630.github.io/C-Arte/
 
 ## 헤더
 
- <img src="git img/헤더/screencapture-bug0630-github-io-C-Arte-2024-07-05-12_42_52 (1).png" height="100"> <br> <img src="git img/헤더/screencapture-bug0630-github-io-C-Arte-2024-07-05-12_45_15 (1).png" height="100"> <br> <img src="git img/헤더/screencapture-bug0630-github-io-C-Arte-2024-07-05-12_47_12 (1).png" height="100"> 
+ <img src="git img/헤더/screencapture-bug0630-github-io-C-Arte-2024-07-05-12_42_52 (1).png"> <br> <img src="git img/헤더/screencapture-bug0630-github-io-C-Arte-2024-07-05-12_45_15 (1).png" height="100"> <br> <img src="git img/헤더/screencapture-bug0630-github-io-C-Arte-2024-07-05-12_47_12 (1).png" height="100"> 
 
