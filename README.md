@@ -48,7 +48,7 @@ https://bug0630.github.io/C-Arte/
  <img src="git img/헤더/screencapture-bug0630-github-io-C-Arte-2024-07-05-12_42_52 (1).png">
  
 ### 801~1200
- <img src="git img/헤더/screencapture-bug0630-github-io-C-Arte-2024-07-05-12_45_15 (1).png" height="100"> 
+ <img src="git img/헤더/screencapture-bug0630-github-io-C-Arte-2024-07-05-12_45_15 (1).png"> 
  
 ### ~800
  
