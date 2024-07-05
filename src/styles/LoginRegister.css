@@ -1,5 +1,6 @@
 .login-wrapper {
-  height: 1200px;
+  height: 100vh;
+  min-height: 800px;
   background-image: url('https://i.pinimg.com/736x/17/c3/e2/17c3e29de8ea625ddac3831b093bb661.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -183,7 +184,8 @@ form .register-link {
 @media screen and (max-width: 900px) {
   .wrapper {
     margin: auto;
-    width: 420px;
+    width: 100%;
+    max-width: 420px;
     height: 450px;
     background: transparent;
     color: black;
