@@ -1,16 +1,21 @@
-# React
+# C'Arte
 
 https://bug0630.github.io/C-Arte/
+## 목적
 
-사용기술: React, SASS, Redux
+미술가와 작품을 소개하고 경매에 참가해 입찰할 수 있는 미술품 경매플랫폼
+
+## 작업과정
 
 5인 팀 프로젝트
 
+작업기간 3주
+
+사용기술: React, SASS, Redux
+
 담당: 메인페이지, 헤더, 푸터, 검색페이지
 
-## 목적
-
-예술가와 작품을 소개하고 경매에 참가해 입찰할 수 있는 예술 경매플랫폼
+각 페이지 반응형 진행중
 
 
 ## 사용한 폰트
@@ -53,4 +58,8 @@ https://bug0630.github.io/C-Arte/
 ### ~800
  
  <img src="git img/헤더/screencapture-bug0630-github-io-C-Arte-2024-07-05-12_47_12 (1).png" height="100"> 
+
+## 캐러셀
+
+## 로그인
 
