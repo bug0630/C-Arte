@@ -2,30 +2,22 @@
 .artist-introduction {
   width: 100%;
   max-width: 1200px;
-  height: 1000px;
-  display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  margin-top: 50px;
-  position: relative;
-  margin: auto;
-  margin-top: 200px;
+  margin: 0 auto;
 }
 .artist-introduction .artist {
-  position: absolute;
-  border-bottom: 1px solid #aa8453;
-  top: -200px;
+  text-align: center;
+  border-bottom: 1px solid #000;
   font-size: 70px;
   color: #000;
+  margin-bottom: 50px;
 }
 
 .artist-info {
-  /* height: 800px; */
   display: flex;
-  margin-bottom: 200px;
   justify-content: space-around;
-  /* align-items: center; */
 }
 
 .details {
@@ -260,8 +252,8 @@
 }
 
 .border {
-  height: 675px;
-  width: 498px;
+  height: 98%;
+  width: 98%;
   background: transparent;
   border-radius: 10px;
   transition: border 1s;
@@ -272,8 +264,7 @@
 }
 
 .cardHeading {
-  height: 685px;
-  width: 508px;
+  width: 500px;
   background: grey;
   border-radius: 10px;
   transition: background 0.8s;
@@ -289,7 +280,7 @@
 .card0 {
   background: url('../../public/images/artist_img/artist1.webp') center center
     no-repeat;
-  background-size: 600px;
+  background-size: cover;
 }
 .card0:hover {
   background: url('../../public/images/artist_img/artist1.webp') top center
@@ -404,6 +395,12 @@ div#columns:hover figure:not(:hover) {
   }
   .cardHeading {
     width: 100%;
+    aspect-ratio: 1/1;
     margin: 0 auto;
+  }
+  .card0 {
+    background: url('../../public/images/artist_img/artist1.webp') center top
+      no-repeat;
+    background-size: cover;
   }
 }

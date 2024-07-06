@@ -47,6 +47,12 @@ $heroHeight: 100vh;
     height: 40px;
     opacity: 1;
   }
+  h1 {
+    font-size: 6em;
+    margin-bottom: 0.1em;
+    font: 5em/1em;
+    color: #fff;
+  }
 }
 
 .centerV {
@@ -56,13 +62,6 @@ $heroHeight: 100vh;
     display: table-cell;
     vertical-align: middle;
   }
-}
-
-h1 {
-  font-size: 6em;
-  margin-bottom: 0.1em;
-  font: 5em/1em;
-  color: #fff;
 }
 
 .centerV p {
@@ -78,7 +77,7 @@ h1 {
 
 .content {
   background: white;
-  padding: 150px 50px;
+  padding: 150px 0px;
   width: 100%;
   p {
     color: black;

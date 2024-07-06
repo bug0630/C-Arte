@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState, useEffect, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import { Modal, Button } from 'react-bootstrap';
-import '../styles/auction.css';
+import '../styles/auction.scss';
 import artData from '../data/auction.json';
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
