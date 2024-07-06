@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import '../../styles/reset.scss';
-// import jsonData from '../../data/artist.json';
 import '../../styles/Artist.scss';
 import '../../styles/ArtistIntroduction.css';
 import { FaMailBulk, FaInstagram } from 'react-icons/fa';
 import Carousel from '../Carousel';
 
 const ArtistIntroduction = () => {
-  // const [artistData] = useState(jsonData);
   const [artistData, setartistData] = useState([]);
 
   useEffect(() => {
@@ -57,7 +55,7 @@ const ArtistIntroduction = () => {
           <div className="titleBanner centerV">
             <div>
               <div className="text">
-                <h1>이달의 작가</h1>
+                <h1>이 달의 작가</h1>
                 <p>There is no must in art because art is free</p>
               </div>
             </div>
@@ -141,31 +139,52 @@ const ArtistIntroduction = () => {
           <br />
           <div id="columns">
             <figure>
-              <img src="C-Arte/images/art_img/img7.webp" alt="" />
+              <img
+                src="https://bug0630.github.io/C-Arte/images/art_img/img7.webp"
+                alt=""
+              />
               <figcaption>청록색으로 물든 아름다운 정원을 담은 작품</figcaption>
             </figure>
             <figure>
-              <img src="C-Arte/images/art_img/img8.webp" alt="" />
+              <img
+                src="https://bug0630.github.io/C-Arte/images/art_img/img8.webp"
+                alt=""
+              />
               <figcaption>밤하늘을 묘사한 걸작</figcaption>
             </figure>
             <figure>
-              <img src="C-Arte/images/art_img/img9.webp" alt="" />
+              <img
+                src="https://bug0630.github.io/C-Arte/images/art_img/img9.webp"
+                alt=""
+              />
               <figcaption>레오나르도 다 빈치에 의한 상징적인 초상화</figcaption>
             </figure>
             <figure>
-              <img src="C-Arte/images/art_img/img10.webp" alt="" />
+              <img
+                src="https://bug0630.github.io/C-Arte/images/art_img/img10.webp"
+                alt=""
+              />
               <figcaption>살바도르 달리의 초현실주의적 걸작</figcaption>
             </figure>
             <figure>
-              <img src="C-Arte/images/art_img/img11.webp" alt="" />
+              <img
+                src="https://bug0630.github.io/C-Arte/images/art_img/img11.webp"
+                alt=""
+              />
               <figcaption>바로크 예술의 대표적인 작품 중 하나</figcaption>
             </figure>
             <figure>
-              <img src="C-Arte/images/art_img/img12.webp" alt="" />
+              <img
+                src="https://bug0630.github.io/C-Arte/images/art_img/img12.webp"
+                alt=""
+              />
               <figcaption>일상적인 장면을 사실적으로 묘사한 작품</figcaption>
             </figure>
             <figure>
-              <img src="C-Arte/images/art_img/img13.webp" alt="" />
+              <img
+                src="https://bug0630.github.io/C-Arte/images/art_img/img13.webp"
+                alt=""
+              />
               <figcaption>
                 전쟁 후 고향으로 돌아오는 장병의 모습을 묘사한 작품
               </figcaption>
