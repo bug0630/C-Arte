@@ -304,13 +304,13 @@
 @media screen and (max-width: 600px) {
   .artworksCarousel .carouselContainer {
     width: 90%;
+    height: 90%;
+    overflow: hidden;
   }
 }
 #columns {
-  column-width: 320px;
+  column-width: 220px;
   column-gap: 15px;
-  width: 90%;
-  max-width: 1100px;
   margin: 50px auto;
 }
 
@@ -356,15 +356,6 @@ div#columns small a {
 
 div#columns:hover figure:not(:hover) {
   opacity: 0.4;
-}
-
-@media screen and (max-width: 750px) {
-  #columns {
-    column-gap: 0px;
-  }
-  #columns figure {
-    width: 100%;
-  }
 }
 
 .otherArtist {
