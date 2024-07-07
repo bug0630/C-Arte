@@ -213,10 +213,6 @@
 .artInfo_value {
   color: #666666;
 }
-.artistDescription {
-  margin: 30px 20px 80px 30px;
-  text-align: justify;
-}
 .artistDescriptionVisible {
   display: flex;
   flex-direction: row;

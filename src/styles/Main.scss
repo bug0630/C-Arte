@@ -75,15 +75,24 @@ $main-color: #aa8453;
   }
 
   .picture {
+    overflow: hidden;
+    width: 100%;
+    border: 5px solid $main-color;
+    @media screen and (max-width: 600px) {
+      overflow: hidden;
+      aspect-ratio: 1/1;
+    }
     &:hover img {
-      transform-origin: center center;
+      transform: scale(1.5) translateY(10%);
+      transition-duration: 1s;
     }
 
     img {
       height: 100%;
-      border: 5px solid $main-color;
+
       @media screen and (max-width: 600px) {
         width: 100%;
+        height: auto;
       }
     }
   }
@@ -308,9 +317,5 @@ $main-color: #aa8453;
     margin-top: 100px;
     display: flex;
     flex-direction: column;
-    .picture {
-      height: 400px;
-      overflow: hidden;
-    }
   }
 }

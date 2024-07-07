@@ -42,16 +42,6 @@ const ArtistIntroduction = () => {
       {/* 배너 */}
       <div className="heroEffects">
         <div className="bg">
-          <div className="arrow bouncy">
-            <svg height="25" width="50">
-              <polygon
-                points="0,0 25,10 50,0 25,25"
-                fill="rgba(255,255,255,.5)"
-                strokeWidth="0"
-                stroke="rgba(255,255,255,.3)"
-              />
-            </svg>
-          </div>
           <div className="titleBanner centerV">
             <div>
               <div className="text">
@@ -62,6 +52,16 @@ const ArtistIntroduction = () => {
           </div>
         </div>
         <div className="shade"></div>
+        <div className="arrow bouncy">
+          <svg height="25" width="50">
+            <polygon
+              points="0,0 25,10 50,0 25,25"
+              fill="rgba(255,255,255,.5)"
+              strokeWidth="0"
+              stroke="rgba(255,255,255,.3)"
+            />
+          </svg>
+        </div>
       </div>
       <div className="content">
         <div className="artist-introduction">

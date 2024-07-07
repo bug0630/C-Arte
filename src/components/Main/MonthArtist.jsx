@@ -1,21 +1,5 @@
 import { Link } from 'react-router-dom';
-import React, { useState, useEffect } from 'react';
 export default function MonthArtist() {
-  const [showBoardSection, setShowBoardSection] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 1000 && !showBoardSection) {
-        setShowBoardSection(true);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [showBoardSection]);
   return (
     <div className="artMonth">
       <h2>Artist of the Month</h2>
@@ -29,8 +13,8 @@ export default function MonthArtist() {
           ></img>
         </div>
         <div className="artistComment">
-          <h3>김세동 @SAM by PEN </h3>
-          <div className={`com ${showBoardSection ? 'show' : ''}`}>
+          <h3>김세동</h3>
+          <div className="com">
             <h4>디지털 캔버스로 한계를 넘다</h4> <br></br> 김세동 작가는 현대
             미술 분야에서 주목받고 있는 젊은 작가입니다.
             <br></br>
