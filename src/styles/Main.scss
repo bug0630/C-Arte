@@ -140,6 +140,7 @@ $main-color: #aa8453;
       }
       @media screen and (max-width: 600px) {
         -webkit-line-clamp: 4;
+        line-height: 1.5em;
       }
       @media screen and (max-width: 400px) {
         -webkit-line-clamp: 3;
