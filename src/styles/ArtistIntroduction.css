@@ -310,8 +310,13 @@
     height: 90%;
     overflow: hidden;
   }
+  .artworksCarousel .carouselContainer .slide img {
+    width: 600px;
+  }
 }
 #columns {
+  width: 100%;
+  max-width: 1200px;
   column-width: 220px;
   column-gap: 15px;
   margin: 50px auto;
