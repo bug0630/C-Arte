@@ -69,9 +69,12 @@
 
 .artistDescription p {
   width: 100%;
-  height: 350px;
-  overflow: hidden;
   text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-clamp: 10;
+  -webkit-line-clamp: 10;
 }
 
 .gallery {
