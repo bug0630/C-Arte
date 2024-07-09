@@ -59,6 +59,9 @@ https://bug0630.github.io/C-Arte/
  
  <img src="git img/헤더/screencapture-bug0630-github-io-C-Arte-2024-07-05-12_47_12 (1).png" height="100"> 
 
+media query
+- 반응형으로 디자인 변경
+
 ## 캐러셀
 
 ### 메인
