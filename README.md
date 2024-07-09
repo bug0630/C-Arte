@@ -60,6 +60,8 @@ https://bug0630.github.io/C-Arte/
  <img src="git img/헤더/screencapture-bug0630-github-io-C-Arte-2024-07-05-12_47_12 (1).png" height="100"> 
 
 ## 캐러셀
+map() 함수를 사용해 캐러셀 컴포넌트를 구현
+0,1,2 3개의 이미지가 보여지는 캐러셀을 구현하였고 1의 이미지에 overflow속성을 사용해 중앙의 이미지만 보여지는 캐러셀로 활용도 가능
 
 ## 로그인
 
