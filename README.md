@@ -80,6 +80,6 @@ map() 함수를 사용해 캐러셀 컴포넌트를 구현
 useeffect훅을 사용해 id를 저장 <br>
 defaultValue로 설정
 
--- id: admin1
--- pw: 123456
+- id: admin1
+- pw: 123456
 
