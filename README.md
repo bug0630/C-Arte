@@ -59,12 +59,19 @@ https://bug0630.github.io/C-Arte/
  
  <img src="git img/헤더/screencapture-bug0630-github-io-C-Arte-2024-07-05-12_47_12 (1).png" height="100"> 
 
+media query
+- 반응형으로 디자인 변경
+
 ## 캐러셀
 
-<img src="git img/screencapture-bug0630-github-io-C-Arte-2024-07-09-17_14_43 (1).png">
+### 메인
+<img src="git img/캐러셀/screencapture-bug0630-github-io-C-Arte-2024-06-25-16_44_08.png">
+
+### 작가페이지 캐러셀
+<img src="git img/캐러셀/screencapture-bug0630-github-io-C-Arte-2024-07-09-17_14_43 (2).png">
 map() 함수를 사용해 캐러셀 컴포넌트를 구현
 
-0,1,2 3개의 이미지가 보여지는 캐러셀을 구현하였고 1의 이미지에 overflow속성을 사용해 중앙의 이미지만 보여지는 캐러셀로 활용도 가능
+3개의 이미지가 보여지는 캐러셀을 구현하였고 2번째의 이미지에 overflow속성을 사용해 중앙의 이미지만 보여지는 캐러셀로 활용 가능
 
 ## 로그인
 
