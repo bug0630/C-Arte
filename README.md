@@ -81,6 +81,6 @@ useeffect훅을 사용해 id를 저장 <br>
 defaultValue로 설정
 
 
-- id admin1
-- pw 123456
+- id: admin1
+- pw: 123456
 
