@@ -1,7 +1,3 @@
-$main-color: #aa8453;
-$tablet: 1200px;
-$mobile: 800px;
-$main-color: #aa8453;
 header {
   width: 100%;
   height: clamp(80px, 9vw, 100px);
@@ -21,16 +17,19 @@ header {
   justify-content: space-between;
   width: 100%;
 }
+
 .nav,
 .nav .nav-links {
   align-items: center;
 }
+
 .search-login {
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin-right: 10px;
 }
+
 .lab-btn {
   width: 100px;
   height: 40px;
@@ -44,6 +43,7 @@ header {
   line-height: 40px;
   margin-left: 20px;
 }
+
 .profileImage {
   width: 50px;
   height: 50px;
@@ -64,9 +64,9 @@ header {
 .logo {
   width: 70px;
   cursor: pointer;
-  img {
-    width: 100%;
-  }
+}
+.logo img {
+  width: 100%;
 }
 
 #text {
@@ -80,12 +80,13 @@ header {
   padding: 1em 2em;
   transition: 0.5s;
 }
+
 .link:hover,
 .link:focus {
-  color: $main-color !important;
+  color: #aa8453 !important;
   width: 100px;
   height: 20px;
-  border: 1px solid $main-color;
+  border: 1px solid #aa8453;
   border-radius: 20px;
   box-shadow: inset 0 0 0 2em var(--hover);
 }
@@ -96,9 +97,10 @@ header {
   cursor: pointer;
   display: none;
 }
+
 .nav .search-icon:hover {
   transform: scale(1.4);
-  color: $main-color;
+  color: #aa8453;
 }
 
 .input {
@@ -115,6 +117,7 @@ header {
   font-size: 16px;
   border: 1px solid gray;
 }
+
 .input:focus {
   border: 2px solid black;
 }
@@ -129,6 +132,7 @@ header {
   font-size: 24px;
   margin-left: 20px;
 }
+
 .dropdown {
   top: 90px;
   right: 20px;
@@ -138,20 +142,23 @@ header {
   color: red;
   font-size: 16px;
   text-align: center;
-  ul {
-    padding: 0;
-    margin: 0;
-  }
 }
+.dropdown ul {
+  padding: 0;
+  margin: 0;
+}
+
 .dropdown li {
   width: 100px;
   cursor: pointer;
 }
+
 .dropdown li:hover {
   text-decoration: underline;
 }
+
 .dropdown::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -0.9rem;
   right: 1.2rem;
@@ -162,7 +169,8 @@ header {
   border-top: 1px solid gray;
   border-left: 1px solid gray;
 }
-@media screen and (max-width: $tablet) {
+
+@media screen and (max-width: 1200px) {
   .nav .search-icon {
     color: #353842;
     font-size: 24px;
@@ -181,8 +189,7 @@ header {
     background-color: white;
   }
 }
-
-@media screen and (max-width: $mobile) {
+@media screen and (max-width: 800px) {
   #text {
     flex-direction: column;
     align-items: flex-start;
@@ -196,12 +203,10 @@ header {
     padding: 40px 0 0 10px;
     transition: 0.3s ease-in;
   }
-
   #text li {
     margin-bottom: 25px;
   }
-
   #mobile {
     display: block;
   }
-}
+}/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,117 @@
+.heroEffects {
+  height: 100vh;
+  position: relative;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.heroEffects .bg {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  background-image: url("https://i.pinimg.com/736x/17/c3/e2/17c3e29de8ea625ddac3831b093bb661.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  transform: scale(1);
+}
+.heroEffects .shade {
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 3;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+}
+.heroEffects .centerV {
+  width: 100%;
+}
+.heroEffects .centerV .text {
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  color: White;
+  padding: 4em;
+  background: #aa8453;
+  opacity: 0.85;
+}
+@media screen and (max-width: 800px) {
+  .heroEffects .centerV .text h1 {
+    font-size: 3em;
+  }
+}
+.heroEffects .arrow {
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+  top: 90%;
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+}
+.heroEffects h1 {
+  font-size: 6em;
+  margin-bottom: 0.1em;
+  color: #fff;
+}
+
+.centerV {
+  display: table;
+  height: 100%;
+}
+.centerV > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.centerV p {
+  width: 70vw;
+  margin: 0 auto;
+  line-height: 1.5em;
+  padding: 10px 20px 0;
+  border-top: solid 1px rgba(255, 255, 255, 0.2);
+  letter-spacing: 0.015em;
+  display: block;
+  color: #eee;
+}
+
+.content {
+  background: white;
+  padding: 150px 0px;
+  width: 100%;
+}
+.content p {
+  color: black;
+  font-size: 16px;
+}
+
+.bouncy {
+  animation: Weeeeeeeeeee 3s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes Weeeeeeeeeee {
+  0% {
+    transform: translate(0, 0px);
+    animation-timing-function: cubic-bezier(0.19, 0.28, 0.27, 1);
+  }
+  11% {
+    transform: translate(0, -25px) scaleX(0.8);
+    animation-timing-function: cubic-bezier(0.57, 0.01, 0.84, 0.5);
+  }
+  20% {
+    transform: translate(0, 0px) scaleY(0.8);
+    animation-timing-function: cubic-bezier(0.19, 0.28, 0.27, 1);
+  }
+  28% {
+    transform: translate(0, -10px);
+    animation-timing-function: cubic-bezier(0.57, 0.01, 0.84, 0.5);
+  }
+  36% {
+    transform: translate(0, 0px);
+    animation-timing-function: cubic-bezier(0.19, 0.28, 0.27, 1);
+  }
+  100% {
+    transform: translate(0, 0px);
+    animation-timing-function: cubic-bezier(0.19, 0.28, 0.27, 1);
+  }
+}/*# sourceMappingURL=Artist.css.map */

@@ -1,0 +1,12 @@
+.cardList {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 720px) {
+  .cardList {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=AuctionItemList.module.css.map */

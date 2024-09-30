@@ -1,0 +1,99 @@
+@charset "UTF-8";
+.bestWrap {
+  margin-top: 200px;
+  width: 100%;
+  height: 1000px;
+  background: url("../img/woman-1283009_1920.jpg") fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dark {
+  width: 100%;
+  background-color: rgba(14, 14, 14, 0.8); /* 배경 색상 */
+  position: relative;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boardSection {
+  width: 100%; /* 부모 요소인 .whiteBoard에 맞춤 */
+  max-width: 1920px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  height: 100%;
+  opacity: 0; /* 초기에는 투명하게 설정 */
+  transition: opacity 3s ease;
+  overflow: hidden;
+}
+@media screen and (max-width: 720px) {
+  .boardSection {
+    opacity: 1;
+  }
+}
+.boardSection .bidBtn {
+  background-color: #aa8453;
+  border: none;
+  width: 300px;
+  height: 40px;
+  border-radius: 3px;
+}
+.boardSection .bidBtn:hover {
+  color: #800020;
+}
+.boardSection h2 {
+  font-size: 36px;
+  text-align: center;
+  color: #aa8453;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #aa8453;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.boardSection.show {
+  opacity: 1; /* 나타나는 중에는 투명도를 1로 설정 */
+}
+
+.bestCarousel {
+  margin: 0 auto;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+.bestCarousel .slide {
+  align-items: flex-start;
+}
+.bestCarousel .slide img {
+  max-width: 400px;
+  opacity: 0.3;
+  transition: transform 0.3s ease;
+}
+.bestCarousel .slide img:nth-of-type(2) {
+  opacity: 1;
+  transition: transform 0.3s ease;
+}
+.bestCarousel .slide img:hover {
+  transform: scale(1.05);
+}
+.bestCarousel .prev,
+.bestCarousel .next {
+  display: none;
+}
+@media screen and (max-width: 720px) {
+  .bestCarousel .prev,
+  .bestCarousel .next {
+    display: block;
+    filter: opacity(60%);
+  }
+}/*# sourceMappingURL=BestArt.css.map */

@@ -1,0 +1,68 @@
+.searchLab {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.searchTab {
+  width: 100%;
+  max-width: 1200px;
+  height: 100px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.selectBox select {
+  font-family: "Baskervville", "Noto Serif KR", serif;
+  font-weight: 400;
+  width: 100px;
+  height: 40px;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid rgb(204, 204, 204);
+}
+.selectBox option {
+  font-family: "Baskervville", "Noto Serif KR", serif;
+  font-size: 16px;
+}
+
+.available {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.available li {
+  font-size: 24px;
+  margin: 20px;
+}
+.available li:hover {
+  color: #aa8453;
+}
+
+@media screen and (max-width: 720px) {
+  .searchTab {
+    width: 100%;
+    max-width: 1200px;
+    height: 100px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .selectBox select {
+    font-family: "Baskervville", "Noto Serif KR", serif;
+    font-weight: 400;
+    width: calc(100vw - 40px);
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid rgb(204, 204, 204);
+  }
+  .selectBox option {
+    font-family: "Baskervville", "Noto Serif KR", serif;
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=Search.css.map */
