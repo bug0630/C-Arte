@@ -78,7 +78,6 @@ map() 함수를 사용해 캐러셀 컴포넌트를 구현
 
 <img src="git img/로그인/screencapture-bug0630-github-io-C-Arte-2024-07-10-16_02_44.png">
 
-defaultValue로 설정한 계정 useeffect훅을 사용해 저장
 
 - id: admin1
 - pw: 123456
